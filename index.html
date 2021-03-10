@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/akt4nzd.css">
+    <title>Restaurant Wok & More</title>
+</head>
+
+<body>
+    <header>
+        <nav class="container-navigation">
+            <button class="burger-menu"><span class="sr-only">Navigations-Menü</span>
+                <svg class="burger-icon" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 94.94 90.33">
+                    <path class="cls-1" d="M3 3h88.3M3.64 45.17h88.3M3 87.33h88.3" />
+                </svg>
+            </button>
+            <ul class="list-reset navigation__list">
+                <li><a href="#takeaway">Takeaway</a></li>
+                <li><a href="#speisekarte">Speisekarte</a></li>
+                <li><a href="#update">Covid-19 Update</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-absolute">
+            <div class="container-hero wrapper-margin">
+                <h1 class="container-hero__main"><span class="container-hero__main--smaller">Restaurant</span> <br>
+                    <span class="container-hero__main--larger">Wok <span class="container-hero__main--blue">&</span>
+                        More</span>
+                </h1>
+                <p class="container-hero__text">All you can eat & A la carte <br> Im Herzen von Wien</p>
+            </div>
+
+            <picture>
+                <source srcset="/img/desktop/hero-img-desktop.jpg" media="(min-width: 1200px)">
+                <source srcset="/img/tablet/hero-img-tablet.jpg" media="(min-width: 768px)">
+                <source srcset="/img/mobile/hero-img-mobile.jpg" media="(min-width: 360px)">
+                <img src="/img/mobile/hero-img-mobile.jpg" class="hero-img" alt="Sushis auf dem Tisch">
+            </picture>
+        </div>
+
+        <section class="wrapper-margin">
+            <h2 id="takeaway">Takeaway</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius dignissimos aut itaque distinctio neque
+                error
+                eaque fugiat ea ratione reprehenderit voluptatem, cum fuga tenetur modi, soluta recusandae facilis
+                praesentium sint?</p>
+            <a class="menu-download" href="/menu/Speisekarte.pdf" target="_blank" id="speisekarte">Speisekarte <span
+                    class="menu-download--smaller">(Pdf)</span></a>
+        </section>
+
+
+        <section>
+            <picture>
+                <source srcset="/img/desktop/interior-desktop.jpg" media="(min-width: 1200px)">
+                <source srcset="/img/mobile/interior-mobile.jpg" media="(min-width: 360px)">
+                <img src="/img/desktop/interior-desktop.jpg" alt="Die Innenausstattung vom Restaurant">
+            </picture>
+
+            <img class="img-hide" src="img/desktop/employe-desktop.jpg" alt="Ein Mitarbeiter bereitet die Tische vor">
+
+        </section>
+
+
+
+        <section class="wrapper-margin container-covid">
+            <h2 id="update">Covid-19 Update</h2>
+            <p class="container-covid__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione vero
+                autem, maiores mollitia aut quis
+                deserunt saepe odio cum delectus quas voluptas quo placeat officia facilis voluptatum libero odit. Vel.
+            </p>
+        </section>
+
+        <section>
+            <img src="img/tablet/cook-tablet.jpg" alt="Der Koch am kochen">
+            <img src="img/tablet/food-2-tablet.jpg" alt="Abbild vom Essen bei All you can eat buffet">
+            <img src="img/tablet/interior-2-tablet.jpg" alt="Ein zweites Bild von der Innenausstattung">
+            <img src="img/tablet/food-tablet.jpg" alt="Pudding mit Erdbeere">
+        </section>
+    </main>
+    <footer>
+        <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10637.14312584278!2d16.3694444!3d48.2011111!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2d6c2b7f0e7b1e76!2sWok%20%26%20More!5e0!3m2!1sde!2sat!4v1615388598570!5m2!1sde!2sat"
+            allowfullscreen="" loading="lazy"></iframe>
+
+
+        <div class="container-footer-main">
+            <section class="wrapper-margin footer-time">
+                <h3>Öffnungszeiten</h3>
+                <p class="footer-time__text">Montag - Sonntag <br>11:30 Uhr - 23:00 Uhr</p>
+            </section>
+            <section class="footer-adress">
+                <h3>Adresse</h3>
+                <p class="footer-adress__text">Karlsplatz 1 <br> 1010 Wien <br> <span class="sr-only">Telefonnummer</span> <a
+                        href="tel:015057603" class="footer-link">01 50 576 03</a> <br> <span
+                        class="sr-only">E-Mail</span>
+                    <a href="mailto:woknmore@office.at" class="footer-link">woknmore@office.at</a>
+                </p>
+            </section>
+        </div>
+        <small><a href="#" class="impressum-link">Impressum</a></small>
+    </footer>
+</body>
+
+</html>

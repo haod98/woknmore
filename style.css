@@ -1,0 +1,255 @@
+/* 
+///////////////////////////////////////////////////
+////////////////////BASE//////////////////////////
+/////////////////////////////////////////////////
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+
+h1 {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: "quasimoda", "myriad-pro", sans-serif; 
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+h2 {
+    font-family: "quasimoda", "myriad-pro", sans-serif; 
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #2561bb;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-top: 30px;
+
+}
+
+h3 {
+    font-family: "quasimoda", "myriad-pro", sans-serif; 
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: white;
+}
+
+a {
+    font-family: "quasimoda", "myriad-pro", sans-serif; 
+
+}
+
+p {
+    font-family: "quasimoda", "myriad-pro", sans-serif; 
+    font-weight: 300;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+footer {
+    background: #2561bb;
+}
+
+small {
+    background: #1d4a8f;
+    display: block;
+    text-align: center;
+}
+
+/* 
+///////////////////////////////////////////////////
+////////////////////HELPER////////////////////////
+/////////////////////////////////////////////////
+*/
+
+.wrapper-margin {
+    margin-left: 3%;
+}
+
+.list-reset {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* 
+///////////////////////////////////////////////////
+///////////////HEADER STYLING/////////////////////
+/////////////////////////////////////////////////
+*/
+
+
+.burger-menu {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.burger-icon {
+    fill: none;
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-miterlimit: 50;
+    stroke-width: 6px;
+    height: 20px;
+}
+
+.container-navigation {
+    position: absolute;
+    z-index: 2;
+    margin: 3%;
+}
+
+.navigation__list { /*REMOVE*/
+    display: none;
+}
+
+
+/* 
+///////////////////////////////////////////////////
+///////////////MAIN STYLING///////////////////////
+/////////////////////////////////////////////////
+*/
+
+
+.container-absolute{
+    position: relative;
+}
+
+.hero-img {
+    max-width: 100%;
+}
+
+.container-hero {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.container-hero__main {
+    line-height: 1;
+}
+
+.container-hero__main--larger {
+    font-size: calc(25px + (65 - 25) * ((100vw - 300px) / (768 - 300)));
+
+}
+
+.container-hero__main--smaller {
+    font-size: calc(19px + (50 - 19) * ((100vw - 300px) / (768 - 300)));
+
+}
+
+.container-hero__main--blue {
+    color: #2561bb;
+}
+
+.container-hero__text {
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 600;
+    font-size: calc(8px + (20 - 8) * ((100vw - 300px) / (768 - 300)));
+}
+
+.img-hide {
+    display: none;
+}
+
+
+.menu-download {
+    text-decoration: none;
+    background: #2561bb;
+    border: solid #2561bb 1rem;
+    display: inline-block;
+    color: #fff;
+    margin-bottom: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.menu-download--smaller {
+    font-size: .75rem;
+}
+
+.container-covid__text {
+    margin-bottom: 30px;
+}
+
+
+
+
+/* 
+///////////////////////////////////////////////////
+///////////////FOOTER STYLING/////////////////////
+/////////////////////////////////////////////////
+*/
+
+.container-footer-main {
+    display: flex;
+}
+
+.footer-time {
+    flex-basis: 60%;
+}
+
+.footer-adress{
+    flex-basis: 40%;
+}
+
+.map{
+    max-width: 768px;
+    width: 100%;
+    height: 200px;
+    border: none;
+}
+
+.footer-adress__text, .footer-time__text {
+    color: #fff;
+    margin: 0;
+}
+
+.footer-adress__text {
+    margin-bottom: 20px;
+}
+
+.footer-link {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.impressum-link {
+    color: #fff;
+}
