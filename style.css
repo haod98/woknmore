@@ -12,12 +12,6 @@ html {
     font-size: 16px;
 }
 
-@media (min-width: 768px){
-    html {
-        display: none;
-    }
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -53,7 +47,7 @@ h2 {
     letter-spacing: 2px;
     font-weight: 700;
     margin-bottom: 0;
-    margin-top: 20px;
+    margin-top: 25px;
 
 }
 
@@ -119,15 +113,17 @@ small {
     border: none;
     padding: 0;
     margin: 0;
-
 }
+
+
 
 .burger-icon {
     fill: none;
     stroke: #fff;
     stroke-linecap: round;
-    stroke-miterlimit: 50;
-    stroke-width: 6px;
+    stroke-miterlimit: 10;
+    stroke-width: 2px;
+    background: #000;
     height: 20px;
 }
 
@@ -155,6 +151,7 @@ small {
 
 .hero-img {
     max-width: 100%;
+    display: block;
 }
 
 .container-hero {
@@ -216,6 +213,11 @@ small {
     text-transform: uppercase;
 }
 
+.menu-download:hover {
+    background: #1d4a8f;
+    border: solid #1d4a8f 1rem;
+}
+
 .menu-download--smaller {
     font-size: .75rem;
 }
@@ -270,4 +272,61 @@ small {
 
 .impressum-link {
     color: #fff;
+}
+
+@media (min-width: 768px) {
+
+/* 
+///////////////////////////////////////////////////
+///////////////HEADER STYLING/////////////////////
+/////////////////////////////////////////////////
+*/
+
+.hero-img
+
+
+
+/* 
+///////////////////////////////////////////////////
+/////////////////MAIN STYLING/////////////////////
+/////////////////////////////////////////////////
+*/
+
+.container-main-section {
+    text-align: center;
+}
+
+.takeaway-text, .container-covid__text {
+    text-align: center;
+} 
+
+.container-flex {
+    display: flex;
+}
+
+.container-flex__basis-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 50%;
+}
+
+.flex-basis-img {
+    flex-basis: 50%;
+}
+
+.container-flex__order {
+    order: 2;
+}
+
+.wrapper-margin-tablet {
+    margin: 0;
+    padding: 0 3%;
+}
+
+.gallery {
+    column-count: 2;
+}
+
 }

@@ -14,9 +14,8 @@
     <header>
         <nav class="container-navigation">
             <button class="burger-menu"><span class="sr-only">Navigations-Menü</span>
-                <svg class="burger-icon" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 94.94 90.33">
-                    <path class="cls-1" d="M3 3h88.3M3.64 45.17h88.3M3 87.33h88.3" />
+                <svg class="burger-icon" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path d="M1.71 2.14h16.47M1.82 10h16.47M1.71 17.86h16.47" />
                 </svg>
             </button>
             <ul class="list-reset navigation__list">
@@ -39,6 +38,7 @@
 
             </div>
             <picture>
+                <source srcset="/icons/logo.svg" media="(min-width: 768px)">
                 <source srcset="/icons/logo-text-only.svg" media="(min-width: 360px)">
                 <img class="logo wrapper-margin" src="icons/logo-text-only.svg" alt="Wok and more Logo">
             </picture>
@@ -51,49 +51,64 @@
             </picture>
         </div>
 
-        <section class="wrapper-margin">
-            <h2 id="takeaway">Takeaway</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius dignissimos aut itaque distinctio neque
-                error
-                eaque fugiat ea ratione reprehenderit voluptatem, cum fuga tenetur modi, soluta recusandae facilis
-                praesentium sint?</p>
-            <a class="menu-download" href="/menu/Speisekarte.pdf" target="_blank" id="speisekarte">Speisekarte <span
-                    class="menu-download--smaller">(Pdf)</span></a>
-        </section>
+        <div class="container-flex">
+            <section class="wrapper-margin container-main-section container-flex__basis-text wrapper-margin-tablet">
+                <h2 id="takeaway">Takeaway</h2>
+                <p class="takeaway-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius dignissimos aut
+                    itaque distinctio
+                    neque
+                    error
+                    eaque fugiat ea ratione reprehenderit voluptatem, cum fuga tenetur modi, soluta recusandae facilis
+                    praesentium sint?</p>
+                <a class="menu-download" href="/menu/Speisekarte.pdf" target="_blank" id="speisekarte">Speisekarte <span
+                        class="menu-download--smaller">(Pdf)</span></a>
+            </section>
 
-
-        <section>
-            <picture>
+            <picture class="container-flex flex-basis-img container-flex__order">
                 <source srcset="/img/desktop/interior-desktop.jpg" media="(min-width: 1200px)">
                 <source srcset="/img/mobile/interior-mobile.jpg" media="(min-width: 360px)">
                 <img src="/img/desktop/interior-desktop.jpg" alt="Die Innenausstattung vom Restaurant">
             </picture>
-
-            <img class="img-hide" src="img/desktop/employe-desktop.jpg" alt="Ein Mitarbeiter bereitet die Tische vor">
-
-        </section>
+        </div>
 
 
 
-        <section class="wrapper-margin container-covid">
-            <h2 id="update">Covid-19 Update</h2>
-            <p class="container-covid__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione vero
-                autem, maiores mollitia aut quis
-                deserunt saepe odio cum delectus quas voluptas quo placeat officia facilis voluptatum libero odit. Vel.
-            </p>
-        </section>
+        <div class="container-flex ">
+            <section
+                class="wrapper-margin container-covid container-main-section container-main-section container-flex__basis-text wrapper-margin-tablet container-flex__order">
+                <h2 id="update">Covid-19 Update</h2>
+                <p class="container-covid__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione vero
+                    autem, maiores mollitia aut quis
+                    deserunt saepe odio cum delectus quas voluptas quo placeat officia facilis voluptatum libero odit.
+                    Vel.
+                </p>
+            </section>
 
-        <section>
-            <img src="img/tablet/cook-tablet.jpg" alt="Der Koch am kochen">
-            <img src="img/tablet/food-2-tablet.jpg" alt="Abbild vom Essen bei All you can eat buffet">
-            <img src="img/tablet/interior-2-tablet.jpg" alt="Ein zweites Bild von der Innenausstattung">
-            <img src="img/tablet/food-tablet.jpg" alt="Pudding mit Erdbeere">
-        </section>
+            <picture class="container-flex flex-basis-img">
+                <source srcset="/img/desktop/cook-desktop.jpg" media="(min-width: 1200px)">
+                <source srcset="/img/mobile/cook-mobile.jpg" media="(min-width: 360px)">
+                <img src="img/desktop/cook-img-desktop.jpg" alt="Unser Chefkoch am Kochen">
+            </picture>
+        </div>
+
+
+        <div>
+            <ul class="list-reset gallery">
+                <li> <img src="img/tablet/interior-3-tablet.jpg" alt="Innenausstattung von Ewok">
+                </li>
+                <li> <img src="img/tablet/food-2-tablet.jpg" alt="Abbild vom Essen bei All you can eat buffet">
+                </li>
+                <li> <img src="img/tablet/interior-2-tablet.jpg" alt="Ein zweites Bild von der Innenausstattung">
+                </li>
+                <li> <img src="img/tablet/food-tablet.jpg" alt="Pudding mit Erdbeere">
+                </li>
+            </ul>
+        </div>
     </main>
     <footer>
         <iframe class="map"
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10637.14312584278!2d16.3694444!3d48.2011111!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2d6c2b7f0e7b1e76!2sWok%20%26%20More!5e0!3m2!1sde!2sat!4v1615388598570!5m2!1sde!2sat"
-            allowfullscreen="" loading="lazy"></iframe>
+            allowfullscreen="" loading="lazy" title="Google Maps Karte wo sich Ewok befindet"></iframe>
 
 
         <div class="container-footer-main">
