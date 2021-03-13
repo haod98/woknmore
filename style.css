@@ -71,8 +71,9 @@ p {
 }
 
 
-img {
-    max-width: 100%;
+.gallery_img {
+    width: 100%;
+    height: 100%;
 }
 
 footer {
@@ -111,13 +112,14 @@ small {
 .burger-menu {
     background: none;
     border: none;
-    padding: 0;
     margin: 0;
+    padding: 10px 10px 10px 0;
+
 }
 
 .container-impressum {
     background: #000;
-    padding: 20px 0;
+    padding: 3%
 }
 
 .container-impressum__burger-margin {
@@ -127,19 +129,19 @@ small {
 
 
 .burger-icon {
-    fill: none;
-    stroke: #fff;
-    stroke-linecap: round;
-    stroke-miterlimit: 10;
-    stroke-width: 2px;
-    background: #000;
-    height: 20px;
+    fill: #f9f9f9;
+}
+
+.burger-container {
+    height: 30px;
+    width: 30px;
 }
 
 .container-navigation {
     position: fixed;
     z-index: 2;
-    margin: 3%;
+    margin-left: 3%;
+    margin-top: 7%;
 }
 
 .navigation__list { /*REMOVE*/
@@ -171,7 +173,7 @@ small {
 }
 
 .container-hero__main {
-    line-height: .9;
+    line-height: 0.9;
 }
 
 .container-hero__main--larger {
@@ -198,9 +200,6 @@ small {
     font-size: calc(8px + (20 - 8) * ((100vw - 300px) / (768 - 300)));
 }
 
-.img-hide {
-    display: none;
-}
 
 .logo {
     position: absolute;
@@ -212,6 +211,7 @@ small {
 .gallery > li { 
     display: flex;
 }
+
 
 
 .menu-download {
@@ -238,9 +238,6 @@ small {
     margin-bottom: 30px;
 }
 
-.gallery_img:hover {
-
-}
 
 /* Impressum */
 .impressum-height_html {
@@ -333,6 +330,14 @@ small {
     /////////////////////////////////////////////////
     */
 
+    .logo {
+        max-width: 200px;
+    }
+    .burger-container {
+    height: 45px;
+    width: 45px;
+
+    }
 
 
     /* 
@@ -341,9 +346,6 @@ small {
     /////////////////////////////////////////////////
     */
 
-    .logo {
-        max-width: 200px;
-    }
 
     .container-main-section {
         text-align: center;
@@ -451,11 +453,10 @@ small {
         text-transform: uppercase;
         font-size: 1.2rem;
         padding: 20px;
-        opacity: 0.8;
+        opacity: 0.7;
     }
 
     .navigation__list a:hover {
-        text-decoration: underline;
         opacity: 1;
     }
 
@@ -465,6 +466,7 @@ small {
 
     .container-navigation {
         position: absolute;
+        margin: 3%;
     }
 
     .container-hero__main {

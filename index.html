@@ -7,15 +7,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/akt4nzd.css">
-    <title>Restaurant Wok & More</title>
+
+    <!-- Primary Meta Tags -->
+    <title>Restaurant Wok and More</title>
+    <meta name="title" content="Restaurant Wok & More">
+    <meta name="description" content="All you can eat im ersten Bezirk | À la carte und vieles mehr!">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://wokandmore.at/">
+    <meta property="og:title" content="Restaurant Wok & More">
+    <meta property="og:description" content="All you can eat im ersten Bezirk | À la carte und vieles mehr!">
+    <meta property="og:image" content="https://wokandmore.at/img/meta/meta-tag.jpg">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://wokandmore.at/">
+    <meta property="twitter:title" content="Restaurant Wok & More">
+    <meta property="twitter:description" content="All you can eat im ersten Bezirk | À la carte und vieles mehr!">
+    <meta property="twitter:image" content="https://wokandmore.at/img/meta/meta-tag.jpg">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2b5797">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+
+
 </head>
 
 <body id="home">
     <header>
         <nav class="container-navigation">
             <button class="burger-menu"><span class="sr-only">Navigations-Menü</span>
-                <svg class="burger-icon" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                    <path d="M1.71 2.14h16.47M1.82 10h16.47M1.71 17.86h16.47" />
+                <svg class="burger-container" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                    <rect width="100" height="100" />
+                    <rect class="burger-icon" x="11.94" y="68.97" width="76.11" height="10.2" rx="2.88" />
+                    <rect class="burger-icon" x="11.94" y="44.9" width="76.11" height="10.2" rx="2.88" />
+                    <rect class="burger-icon" x="11.94" y="20.83" width="76.11" height="10.2" rx="2.88" />
                 </svg>
             </button>
             <ul class="list-reset navigation__list">
@@ -69,7 +100,7 @@
             <picture class="container-flex flex-basis-img container-flex__order">
                 <source srcset="/img/desktop/cook-desktop.jpg" media="(min-width: 1200px)">
                 <source srcset="/img/mobile/cook-mobile.jpg" media="(min-width: 360px)">
-                <img src="img/desktop/cook-img-desktop.jpg" alt="Unser Chefkoch am Kochen">
+                <img src="img/desktop/cook-img-desktop.jpg" class="gallery_img" alt="Unser Chefkoch am Kochen">
             </picture>
         </div>
 
@@ -89,7 +120,8 @@
             <picture class="container-flex flex-basis-img">
                 <source srcset="/img/desktop/interior-desktop.jpg" media="(min-width: 1200px)">
                 <source srcset="/img/mobile/interior-mobile.jpg" media="(min-width: 360px)">
-                <img src="/img/desktop/interior-desktop.jpg" alt="Die Innenausstattung vom Restaurant">
+                <img src="/img/desktop/interior-desktop.jpg" class="gallery_img"
+                    alt="Die Innenausstattung vom Restaurant">
             </picture>
         </div>
 
@@ -113,7 +145,7 @@
         <div class="container-flex-tablet">
             <div class="map-flex">
                 <iframe class="map"
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10637.14312584278!2d16.3694444!3d48.2011111!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2d6c2b7f0e7b1e76!2sWok%20%26%20More!5e0!3m2!1sde!2sat!4v1615388598570!5m2!1sde!2sat"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10637.14312584278!2d16.3694444!3d48.2011111!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2d6c2b7f0e7b1e76!2sWok%20%26%20More!5e0!3m2!1sde!2sat!4v1615388598570!5m2!1sde!2sat&z=1"
                     allowfullscreen="" loading="lazy" title="Google Maps Karte wo sich Ewok befindet"></iframe>
             </div>
             <div class="container-footer-main">
@@ -132,8 +164,9 @@
             </div>
 
         </div>
-        <small><a href="#" class="impressum-link">Impressum</a></small>
+        <small><a href="impressum.html" class="impressum-link">Impressum</a></small>
     </footer>
 </body>
+
 </html>
 <!-- HD -->
