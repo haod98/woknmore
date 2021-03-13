@@ -10,7 +10,7 @@
     <title>Restaurant Wok & More</title>
 </head>
 
-<body>
+<body id="home">
     <header>
         <nav class="container-navigation">
             <button class="burger-menu"><span class="sr-only">Navigations-Menü</span>
@@ -19,10 +19,11 @@
                 </svg>
             </button>
             <ul class="list-reset navigation__list">
+                <li><a href="#home">Home</a></li>
                 <li><a href="#takeaway">Takeaway</a></li>
                 <li><a href="#speisekarte">Speisekarte</a></li>
                 <li><a href="#update">Covid-19 Update</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
+                <li><a href="impressum.html">Kontakt</a></li>
             </ul>
         </nav>
     </header>
@@ -37,6 +38,7 @@
                 <p class="container-hero__text">All you can eat & A la carte <br> Im Herzen von Wien</p>
 
             </div>
+
             <picture>
                 <source srcset="/icons/logo.svg" media="(min-width: 768px)">
                 <source srcset="/icons/logo-text-only.svg" media="(min-width: 360px)">
@@ -51,9 +53,9 @@
             </picture>
         </div>
 
-        <div class="container-flex">
+        <div class="container-flex" id="takeaway">
             <section class="wrapper-margin container-main-section container-flex__basis-text wrapper-margin-tablet">
-                <h2 id="takeaway">Takeaway</h2>
+                <h2>Takeaway</h2>
                 <p class="takeaway-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius dignissimos aut
                     itaque distinctio
                     neque
@@ -65,18 +67,18 @@
             </section>
 
             <picture class="container-flex flex-basis-img container-flex__order">
-                <source srcset="/img/desktop/interior-desktop.jpg" media="(min-width: 1200px)">
-                <source srcset="/img/mobile/interior-mobile.jpg" media="(min-width: 360px)">
-                <img src="/img/desktop/interior-desktop.jpg" alt="Die Innenausstattung vom Restaurant">
+                <source srcset="/img/desktop/cook-desktop.jpg" media="(min-width: 1200px)">
+                <source srcset="/img/mobile/cook-mobile.jpg" media="(min-width: 360px)">
+                <img src="img/desktop/cook-img-desktop.jpg" alt="Unser Chefkoch am Kochen">
             </picture>
         </div>
 
 
 
-        <div class="container-flex ">
+        <div class="container-flex" id="update">
             <section
                 class="wrapper-margin container-covid container-main-section container-main-section container-flex__basis-text wrapper-margin-tablet container-flex__order">
-                <h2 id="update">Covid-19 Update</h2>
+                <h2>Covid-19 Update</h2>
                 <p class="container-covid__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione vero
                     autem, maiores mollitia aut quis
                     deserunt saepe odio cum delectus quas voluptas quo placeat officia facilis voluptatum libero odit.
@@ -85,48 +87,53 @@
             </section>
 
             <picture class="container-flex flex-basis-img">
-                <source srcset="/img/desktop/cook-desktop.jpg" media="(min-width: 1200px)">
-                <source srcset="/img/mobile/cook-mobile.jpg" media="(min-width: 360px)">
-                <img src="img/desktop/cook-img-desktop.jpg" alt="Unser Chefkoch am Kochen">
+                <source srcset="/img/desktop/interior-desktop.jpg" media="(min-width: 1200px)">
+                <source srcset="/img/mobile/interior-mobile.jpg" media="(min-width: 360px)">
+                <img src="/img/desktop/interior-desktop.jpg" alt="Die Innenausstattung vom Restaurant">
             </picture>
         </div>
 
 
         <div>
-            <ul class="list-reset gallery">
-                <li> <img src="img/tablet/interior-3-tablet.jpg" alt="Innenausstattung von Ewok">
+            <ul class="list-reset gallery container-flex">
+                <li> <img class="gallery_img" src="img/tablet/interior-3-tablet.jpg" alt="Innenausstattung von Ewok">
                 </li>
-                <li> <img src="img/tablet/food-2-tablet.jpg" alt="Abbild vom Essen bei All you can eat buffet">
+                <li> <img class="gallery_img" src="img/tablet/food-2-tablet.jpg"
+                        alt="Abbild vom Essen bei All you can eat buffet">
                 </li>
-                <li> <img src="img/tablet/interior-2-tablet.jpg" alt="Ein zweites Bild von der Innenausstattung">
+                <li> <img class="gallery_img" src="img/tablet/interior-2-tablet.jpg"
+                        alt="Ein zweites Bild von der Innenausstattung">
                 </li>
-                <li> <img src="img/tablet/food-tablet.jpg" alt="Pudding mit Erdbeere">
+                <li> <img class="gallery_img" src="img/tablet/food-tablet.jpg" alt="Pudding mit Erdbeere">
                 </li>
             </ul>
         </div>
     </main>
     <footer>
-        <iframe class="map"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10637.14312584278!2d16.3694444!3d48.2011111!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2d6c2b7f0e7b1e76!2sWok%20%26%20More!5e0!3m2!1sde!2sat!4v1615388598570!5m2!1sde!2sat"
-            allowfullscreen="" loading="lazy" title="Google Maps Karte wo sich Ewok befindet"></iframe>
+        <div class="container-flex-tablet">
+            <div class="map-flex">
+                <iframe class="map"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10637.14312584278!2d16.3694444!3d48.2011111!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2d6c2b7f0e7b1e76!2sWok%20%26%20More!5e0!3m2!1sde!2sat!4v1615388598570!5m2!1sde!2sat"
+                    allowfullscreen="" loading="lazy" title="Google Maps Karte wo sich Ewok befindet"></iframe>
+            </div>
+            <div class="container-footer-main">
+                <section class="wrapper-margin footer-time">
+                    <h3 class="footer-time__heading">Öffnungszeiten</h3>
+                    <p class="footer-time__text">Montag - Sonntag <br>11:30 Uhr - 23:00 Uhr</p>
+                </section>
+                <section class="footer-adress wrapper-margin">
+                    <h3 class="footer-adress__heading">Adresse</h3>
+                    <p class="footer-adress__text">Karlsplatz 1 <br> 1010 Wien <br> <span
+                            class="sr-only">Telefonnummer</span> <a href="tel:015057603" class="footer-link">01 50 576
+                            03</a> <br> <span class="sr-only">E-Mail</span>
+                        <a href="mailto:woknmore@office.at" class="footer-link">woknmore@office.at</a>
+                    </p>
+                </section>
+            </div>
 
-
-        <div class="container-footer-main">
-            <section class="wrapper-margin footer-time">
-                <h3 class="footer-time__heading">Öffnungszeiten</h3>
-                <p class="footer-time__text">Montag - Sonntag <br>11:30 Uhr - 23:00 Uhr</p>
-            </section>
-            <section class="footer-adress wrapper-margin">
-                <h3 class="footer-adress__heading">Adresse</h3>
-                <p class="footer-adress__text">Karlsplatz 1 <br> 1010 Wien <br> <span
-                        class="sr-only">Telefonnummer</span> <a href="tel:015057603" class="footer-link">01 50 576
-                        03</a> <br> <span class="sr-only">E-Mail</span>
-                    <a href="mailto:woknmore@office.at" class="footer-link">woknmore@office.at</a>
-                </p>
-            </section>
         </div>
         <small><a href="#" class="impressum-link">Impressum</a></small>
     </footer>
 </body>
-
 </html>
+<!-- HD -->
