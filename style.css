@@ -152,6 +152,12 @@ small {
 .burger-container {
     height: 30px;
     width: 30px;
+    opacity: 1;
+    transition: opacity .2s ease-in-out;
+}
+
+.burger-container--opacity{
+    opacity: 0;
 }
 
 .container-navigation {
@@ -182,6 +188,10 @@ small {
     font-weight: 700;
     padding: 10% 0;
     line-height: 0.2;
+}
+
+.desktop-nav {
+    display: none;
 }
 
 
@@ -482,15 +492,15 @@ small {
         display: none;
     }
 
-    .navigation__list {
+    .desktop-nav{
         display: flex;
     }
 
-    .navigation__list > li {
+    .desktop-nav> li {
         margin-right: 70px;
     }
 
-    .navigation__list a {
+    .desktop-nav a {
         text-decoration: none;
         color: #fff;
         font-weight: 700;
@@ -500,13 +510,15 @@ small {
         opacity: 0.7;
     }
 
-    .navigation__list a:hover {
+    .desktop-nav a:hover {
         opacity: 1;
     }
 
     .logo {
         max-width: 250px;
     }
+
+
 
     .container-navigation {
         position: absolute;
@@ -540,6 +552,10 @@ small {
         margin: 0 3%;
     }
 
+    .container-navigation-impressum {
+        position: static;
+        margin: 0;
+    }
 
 }
 
