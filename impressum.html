@@ -7,23 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Wok & More - Impressum</title>
     <link rel="stylesheet" href="style.css">
+    <script src="js/main.js" defer></script>
 </head>
 
 <body class="impressum-height_body">
     <header>
-        <nav class="container-impressum">
+        <nav class="container-impressum container-navigation">
             <button class="burger-menu container-impressum__burger-margin"><span class="sr-only">Navigations-Menü</span>
-                <svg class="burger-icon" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                    <path d="M1.71 2.14h16.47M1.82 10h16.47M1.71 17.86h16.47" />
+                <svg class="burger-container" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                    <rect width="100" height="100" />
+                    <rect class="burger-icon" x="11.94" y="68.97" width="76.11" height="10.2" rx="2.88" />
+                    <rect class="burger-icon" x="11.94" y="44.9" width="76.11" height="10.2" rx="2.88" />
+                    <rect class="burger-icon" x="11.94" y="20.83" width="76.11" height="10.2" rx="2.88" />
+                </svg>
+                <!-- Close -->
+
+
+                <svg class="burger-menu-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                    <rect width="100" height="100" />
+                    <rect class="burger-close" x="45.06" y="13.17" width="9.87" height="73.67" rx="2.79"
+                        transform="translate(-19.59 37.45) rotate(-34.77)" />
+                    <rect class="burger-close" x="13.17" y="45.06" width="73.67" height="9.87" rx="2.79"
+                        transform="translate(-20.08 59.39) rotate(-52.63)" />
                 </svg>
             </button>
-            <ul class="list-reset navigation__list">
-                <li><a href="index.html#home">Home</a></li>
-                <li><a href="index.html#takeaway">Takeaway</a></li>
-                <li><a href="index.html#speisekarte">Speisekarte</a></li>
-                <li><a href="index.html#update">Covid-19 Update</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
-            </ul>
+            <div class="overlay">
+                <ul class="list-reset navigation__list">
+                    <li><a class="nav-link" href="index.html#home">Home</a></li>
+                    <li><a class="nav-link" href="index.html#takeaway">Takeaway</a></li>
+                    <li><a class="nav-link" href="index.html#speisekarte">Speisekarte</a></li>
+                    <li><a class="nav-link" href="index.html#update">Covid-19 Update</a></li>
+                    <li><a class="nav-link" href="impressum.html">Kontakt</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -37,6 +53,13 @@
             1010 Wien<br>
             Telefonnummer: 01 50 576 03<br>
             E-Mail: woknmore@office.at<br>
+        </p>
+
+        <h2 class="impressum_heading">
+            Kontakt
+        </h2>
+        <p class="impressum_text">
+            Für Reversierungen und Fragen verwenden Sie bitte obige Telefonnumer oder die E-Mail Adresse.
         </p>
     </main>
 

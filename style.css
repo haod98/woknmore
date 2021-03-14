@@ -15,6 +15,20 @@ html {
 body {
     margin: 0;
     padding: 0;
+    
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 3;
 }
 
 .sr-only {
@@ -114,22 +128,25 @@ small {
     border: none;
     margin: 0;
     padding: 10px 10px 10px 0;
+    position: absolute;
+    z-index: 4;
 
-}
-
-.container-impressum {
-    background: #000;
-    padding: 3%
-}
-
-.container-impressum__burger-margin {
-    margin: 0 3%;
 }
 
 
 
 .burger-icon {
     fill: #f9f9f9;
+}
+
+.burger-close {
+    fill: #f9f9f9;
+}
+
+.burger-menu-close {
+    height: 30px;
+    width: 30px;
+    display: none;
 }
 
 .burger-container {
@@ -139,14 +156,34 @@ small {
 
 .container-navigation {
     position: fixed;
-    z-index: 2;
+    z-index: 4;
     margin-left: 3%;
     margin-top: 7%;
 }
 
 .navigation__list { /*REMOVE*/
-    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    font-size: 2rem;
+    text-align: center;
 }
+
+.navigation__list li { 
+    margin: 15% 0;
+
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    padding: 10% 0;
+    line-height: 0.2;
+}
+
 
 
 /* 
@@ -240,6 +277,13 @@ small {
 
 
 /* Impressum */
+
+.container-impressum {
+    background: none;
+    padding: 0;
+    margin: 3%;
+} 
+
 .impressum-height_html {
     height: 100%;
 }
@@ -333,10 +377,10 @@ small {
     .logo {
         max-width: 200px;
     }
-    .burger-container {
+
+    .burger-container, .burger-menu-close {
     height: 45px;
     width: 45px;
-
     }
 
 
@@ -485,7 +529,16 @@ small {
     }
 
     
+    /* Impressum */
+
+    .container-impressum {
+        background: #000;
+        padding: 3%
+    }
     
+    .container-impressum__burger-margin {
+        margin: 0 3%;
+    }
 
 
 }
