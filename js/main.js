@@ -1,5 +1,3 @@
-
-
 const burger_menu = document.querySelector('.burger-container');
 const overlay = document.querySelector('.overlay');
 const burger_close = document.querySelector('.burger-menu-close');
@@ -19,12 +17,11 @@ const open = function () {
     burger_close.style.display = 'block';
     console.log(burger_close.style.display);
 
-
-
     for (const menu_item of burger_menu_list) {
         menu_item.addEventListener('click', close);
     }
 };
+
 
 const opacity = function () {
     window.clearTimeout(is_scrolling);
@@ -37,12 +34,10 @@ const opacity = function () {
             burger_menu.classList.remove('burger-container--opacity');
         }, 500)
     };
-    console.log('augefuehrt')
 }
 
 
 window.addEventListener("scroll", opacity);
-
 burger_menu.addEventListener('click', open);
 overlay.addEventListener('click', close);
 burger_close.addEventListener('click', close);
